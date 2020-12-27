@@ -1,3 +1,12 @@
+def process(type_coin, dollar_value):
+    coin = float(input('¿Cuántos pesos ' + type_coin + ' tienes?'))
+
+    dollars = round(coin / dollar_value)
+    dollars = str(dollars)
+
+    print('Tienes $ ' + dollars + 'dólares')
+
+
 menu = """
   Bienvenido al conversor de monedas
 
@@ -6,37 +15,18 @@ menu = """
   3 - Pesos mexicanos
 
   Elige una opcion:
-
 """
 
 option = float(input(menu))
 
 if option == 1:
-    coin = float(input("¿Cuántos pesos colombianos tienes?"))
-
-    dollar_value = 3500
-
-    dollars = round(coin / dollar_value)
-    dollars = str(dollars)
+    process('colombianos', 3500)
 
     print('Tienes $' + dollars + 'dólares')
 elif option == 2:
-    coin = float(input("¿Cuántos pesos argentinos tienes?"))
+    process('argentinos', 65)
 
-    dollar_value = 65
-
-    dollars = round(coin / dollar_value)
-    dollars = str(dollars)
-
-    print('Tienes $' + dollars + 'dólares')
 elif option == 3:
-    coin = float(input("¿Cuántos pesos mexicanos tienes?"))
-
-    dollar_value = 24
-
-    dollars = round(coin / dollar_value)
-    dollars = str(dollars)
-
-    print('Tienes $' + dollars + 'dólares')
+    process('mexicanos', 24)
 else:
     print('Ingresa una opción valida, por favor')
