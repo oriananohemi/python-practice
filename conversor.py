@@ -22,7 +22,6 @@ option = float(input(menu))
 if option == 1:
     process('colombianos', 3500)
 
-    print('Tienes $' + dollars + 'dólares')
 elif option == 2:
     process('argentinos', 65)
 
