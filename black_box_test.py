@@ -5,7 +5,7 @@ def sum(element1, element2):
     return element1 + element2
 
 
-class blackBoxTest(unittest.TestCase):
+class BlackBoxTest(unittest.TestCase):
 
     def test_sum(self):
         num_1 = 10
